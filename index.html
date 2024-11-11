@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/gellary.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#"> <span class="text-warning">Sell</span>Bazar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel with margin-top to avoid overlap -->
+    <div   div class="carousel carousel-white slide mt-5 mb-3" id="carouselDemo"   
+       data-bs-wrap="true"     data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- All original carousel items -->
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="corousel/01.jpg" class="w-100 img-fluid" alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to SellBazar 1</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="corousel/04.jpg" class="w-100 img-fluid" alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to SellBazar 2</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="corousel/02.jpg" class="w-100 img-fluid" alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to SellBazar 3</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="corousel/05.png" class="w-100 img-fluid" alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to SellBazar 4</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark"></span>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="0">
+                <img src="corousel/01.jpg" class="img-fluid" alt="">
+            </button>
+            <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1">
+                <img src="corousel/04.jpg" class="img-fluid" alt="">
+            </button>
+            <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="2">
+                <img src="corousel/02.jpg" class="img-fluid" alt="">
+            </button>
+            <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="3">
+                <img src="corousel/05.png" class="img-fluid" alt="">
+            </button>
+        </div>
+    </div>
+
+	<!-- Who we Are  -->
+	 <div class="container-fluid my-5 bg-light py-5">
+		<div class="container">
+			<h4 class="text-uppercase text-secondary mb-3">About <span class="text-danger">Us</span></h4>
+			<h1 class="mb-4 font-weight-bold">Who We Are</h1>
+
+		<div class="row align-items-center">
+			<div class="col-12 col-md-6 mb-4">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<ul>
+					<li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>					
+					<li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+					<li>Ullamco laboris nisi ut aliquip ex ea commodo</li>					
+				</ul>
+			</div>
+			<div class="col-12 col-md-6">
+				<p>
+					Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<button class="btn btn-warning">Read More </button>
+			</div>
+		</div>
+		</div>
+	 </div>
+
+	 <!-- Demo of our Product  -->
+      <div class="container my-5">
+        <h2>DEMO OF <span class="text-danger">OUR PRODUCT</span></h2>
+        <!-- filter button  -->
+         <div class="filter-btns text-center my-4">
+            <button class="col-lg-2 col-md-4 col-auto btn btn-warning px-4 py-2 fw-bold ms-4 mb-3 filter-btn" data-filter="all">All</button>
+
+            <button class="col-lg-2 col-md-4 col-auto btn btn-warning px-4 py-2 fw-bold ms-4 mb-3 filter-btn" data-filter="app">App</button>
+
+            <button class="col-lg-2 col-md-4 col-auto btn btn-warning px-4 py-2 fw-bold ms-4 mb-3 filter-btn" data-filter="card">Card</button>
+
+            <button class="col-lg-2 col-md-4 col-auto btn btn-warning px-4 py-2 fw-bold ms-4 mb-3 filter-btn" data-filter="web">Web</button>
+         </div>
+
+         <!-- Gallery Grid  -->
+        <div class="row gallery g-3">
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="all product/prod  1.jpg" class="img-fluid app" alt="">
+                <img src="all product/prod  4.jpg" class="img-fluid card" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="all product/prod  2.jpg" class="img-fluid web" alt="">
+                <img src="all product/prod  5.jpg" class="img-fluid app" alt="">
+                <img src="all product/prod  8.jpg" class="img-fluid card" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="all product/prod  3.jpg" class="img-fluid web" alt="">
+                <img src="all product/prod  6.jpg" class="img-fluid app" alt="">
+                <img src="all product/prod  7.jpg" class="img-fluid card" alt="">
+                <img src="all product/prod  9.jpg" class="img-fluid web" alt="">
+            </div>
+        </div>
+
+      </div>
+
+      <!-- aceivement  -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Our Achievements</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3 id="totalEmployees">0</h3>
+                <p>Total Employees</p>
+            </div>
+            <div class="col-md-4">
+                <h3 id="happyCustomers">0</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="col-md-4">
+                <h3 id="projectsCompleted">0</h3>
+                <p>Projects Completed</p>
+            </div>
+        </div>
+    </div>
+
+      <!-- All Collection  -->
+    <section class="container" style="background-color: #FBFBFB; padding: 1rem;">
+        <div class="text-center mt-5" >
+            <h2 class="fw-bold font"><span class="text-danger">Smartphone</span> Hot Collection</h2>
+            <p>Different Brand Collections</p>
+            <hr class="my-4">
+            <p class="mb-3">
+                <a class="btn btn-warning fw-bold" href="/" role="button">More info</a>
+            </p>
+            <!-- Smartphone collection  -->
+            <div class="row" >
+                <!-- Left side for image -->
+                <div class="col-md-6">
+                    <img src="phone/ip1.jpeg" id="main-image" alt="iphone" class="img-fluid">
+                </div>
+                <!-- Right side accordion -->
+                <div class="col-md-6 mt-4 active">
+                    <div class="accordion" id="accordionExample">
+                        <!-- First Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onmouseover="changeImage('phone/ip1.jpeg')" onclick="changeImage('phone/ip1.jpeg')">
+                                    <strong>Iphone</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The iPhone is known for its sleek design, powerful processor, and high-quality camera.The iPhone is known for its sleek design, powerful processor, and high-quality camera.The iPhone is known for its sleek design, powerful processor, and high-quality camera.The iPhone is known for its sleek design, powerful processor, and high-quality camera.The iPhone is known for its sleek design, powerful processor, and high-quality camera.The iPhone is known for its sleek design, powerful processor, and high-quality camera
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onmouseover="changeImage('phone/sg-1.webp')">
+                                    <strong>Samsung</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Samsung phones are known for their vibrant AMOLED displays and versatile camera systems.Samsung phones are known for their vibrant AMOLED displays and versatile camera systems.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Third Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onmouseover="changeImage('phone/oneplus-2.jpg')">
+                                    <strong>OnePlus</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    OnePlus phones provide high performance with a focus on speed and efficiency.OnePlus phones provide high performance with a focus on speed and efficiency
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fourth Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onmouseover="changeImage('phone/vivo-1.webp')">
+                                    <strong>Vivo</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Vivo phones provide high performance with a focus on speed and efficiency. Vivo phones provide high performance with a focus on speed and efficiency.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container my-5">
+        <h2 class="my-3"><span class="text-danger">Smartphone</span> Hot Collection</h2>
+         <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-2 ">
+                <img src="phone/banner.jpeg" class="img-fluid rounded" alt="mobile banner">
+            </div>
+            <div class="col-md-8" >
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/ip4.jpeg" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Iphone</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/ip5.jpeg" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Iphone</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/i-2.webp" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Samsung</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/sam-3.webp" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung </h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>   
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/sam-1.webp" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/vivo-1.webp" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Vivo</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/sam-4.webp" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card shadow-sm rounded">
+                            <img src="phone/ip4.jpeg" class="card-img-top" alt="smartphone 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Iphone</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- laptop portion  -->
+    <div class="container" >
+        <img src="laptop/main banner.jpg" class="img-fluid my-4 shadow-sm" alt="">
+    </div>
+    <!-- all laptop collections  --> 
+    <div class="container my-5"  style="background-color: #FBFBFB; padding: 1rem;">
+        <h2 class="my-3"><span class="text-danger fw-bold">Laptop</span> Hot Collection</h2>
+        <div class="row">
+            <div class="col-md-8" >
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/asus-1.jpeg" class="card-img-top" alt="laptop 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Asus</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/asus-2.jpeg" class="card-img-top" alt="laptop 2">
+                            <div class="card-body ">
+                              <h5 class="card-title">Asus</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/hp-1.jpeg" class="card-img-top" alt="laptop 3">
+                            <div class="card-body ">
+                              <h5 class="card-title">Hp</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/asus-3.jpeg" class="card-img-top" alt="laptop 4">
+                            <div class="card-body ">
+                              <h5 class="card-title">Hp</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/dell-1.jpeg" class="card-img-top" alt="laptop 5">
+                            <div class="card-body ">
+                              <h5 class="card-title">MacBook</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/hp-2.jpeg" class="card-img-top" alt="laptop 6">
+                            <div class="card-body ">
+                              <h5 class="card-title">MacBook</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/lap4.jpeg" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h5 class="card-title">lenevo</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                   </div>
+                    <!-- card 8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="laptop/dell-1.jpeg" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h5 class="card-title">lenevo</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
+                <img src="laptop/lap banner.jpg" class="img-fluid rounded" alt="mobile banner">
+            </div>
+         </div>
+    </div>
+
+    <!-- some more categories  -->
+     <div class="container  my-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/home.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/game.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/printer.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/clock.jpeg" class="img-fluid rounded" alt="">
+            </div>
+        </div>
+     </div>
+
+     <!--Gadget portion  -->
+    <!-- all laptop collections  --> 
+    <div class="container my-5"  style="background-color: #FBFBFB; padding: 1rem;">
+        <h2 class="my-3"><span class="text-danger fw-bold">Trendy Gadgets</span>  Carnival</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
+                <img src="gadget/gadget banner.png" class="img-fluid rounded" alt="mobile banner">
+            </div>
+
+            <div class="col-md-8" >
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/1.webp" class="card-img-top" alt="laptop 1">
+                            <div class="card-body ">
+                              <h6 class="card-title">SoundPEATS Free2 Classic TWS Earbuds</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/2.webp" class="card-img-top" alt="laptop 2">
+                            <div class="card-body ">
+                              <h6 class="card-title">Wired Headphone Black</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/3.webp" class="card-img-top" alt="laptop 3">
+                            <div class="card-body ">
+                              <h6 class="card-title">Bluetooth Speaker Black</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/4.webp" class="card-img-top" alt="laptop 4">
+                            <div class="card-body ">
+                              <h6 class="card-title">  Bluetooth Speaker Starting from</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/5.webp" class="card-img-top" alt="laptop 5">
+                            <div class="card-body ">
+                              <h6 class="card-title">Bluetooth Speaker 360°</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/6.webp" class="card-img-top" alt="laptop 6">
+                            <div class="card-body ">
+                              <h6 class="card-title">Tribit StormBox Pro Portable Speaker 360°</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/7.webp" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h6 class="card-title">EarFun Air Mini 2 True Wireles</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+    6               </div>
+                    <!-- card 8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="gadget/8.webp" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h6 class="card-title">Pro 3 Hi-Res Snapdragon Sound</h6>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+         </div>
+    </div>
+
+    <!-- some more categories  -->
+     <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/charger.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/fan.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/keyboard.jpeg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+                <img src="demo banne/ipad.jpeg" class="img-fluid rounded" alt="">
+            </div>
+        </div>
+     </div>
+
+     <!-- all watch collections  --> 
+    <div class="container my-5"  style="background-color: #FBFBFB; padding: 1rem;">
+        <h2 class="my-3"><span class="text-danger fw-bold">Watch</span> Hot Collection</h2>
+        <div class="row">
+            <div class="col-md-8" >
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c1.webp" class="card-img-top" alt="laptop 1">
+                            <div class="card-body ">
+                              <h5 class="card-title">Asus</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-5.webp" class="card-img-top" alt="laptop 2">
+                            <div class="card-body ">
+                              <h5 class="card-title">Asus</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-3.webp" class="card-img-top" alt="laptop 3">
+                            <div class="card-body ">
+                              <h5 class="card-title">Hp</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-4.webp" class="card-img-top" alt="laptop 4">
+                            <div class="card-body ">
+                              <h5 class="card-title">Hp</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-7.webp" class="card-img-top" alt="laptop 5">
+                            <div class="card-body ">
+                              <h5 class="card-title">MacBook</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c1.webp" class="card-img-top" alt="laptop 6">
+                            <div class="card-body ">
+                              <h5 class="card-title">MacBook</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-7.webp" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h5 class="card-title">lenevo</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                   </div>
+                    <!-- card 8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
+                        <div class="card shadow-sm rounded">
+                            <img src="clock/c-8.webp" class="card-img-top" alt="laptop 7">
+                            <div class="card-body ">
+                              <h5 class="card-title">lenevo</h5>
+                              <p>price: <span class="text-danger fw-bold">500000tk</span></p>  
+                              <a href="#" class="btn btn-sm btn-primary">Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-2">
+                <img src="demo banne/clock2.jpeg" class="img-fluid rounded" alt="mobile banner">
+            </div>
+         </div>
+    </div>
+    
+   <!-- Our Delivery System -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Delivery System</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/package-received.png" class="card-img-top img-fluid mb-2 w-25 d-block mx-auto" alt="Order Placement">
+                    <h6>Order Placement</h6>
+                    <p class="small">Easily place your order.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/commercial.png" class="card-img-top img-fluid mb-2 w-25 d-block mx-auto" alt="Processing">
+                    <h6>Processing</h6>
+                    <p class="small">Order prepared promptly.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/food-delivery.png" class="card-img-top img-fluid mb-2 w-25 d-block mx-auto" alt="Delivery">
+                    <h6>Delivery</h6>
+                    <p class="small">On-time delivery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Happy Customer Section -->
+    <div class="container my-5" style="background-color: #FBFBFB; padding: 1rem;">
+        <h2 class="my-5 text-center"><span class="text-danger fw-bold ">Happy</span> Customer</h2>
+        <div class="row">
+            <!-- Part 1: 2 Images -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                <div class="mb-2">
+                    <img src="happy customer/6.jpg" class="img-fluid" alt="Happy Customer Image 1">
+                </div>
+                <div>
+                    <img src="happy customer/5.jpg" class="img-fluid" alt="Happy Customer Image 2">
+                </div>
+            </div>
+
+            <!-- Part 2: Multiple Images - Responsive Grid -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/8.jpg" class="img-fluid" alt="Happy Customer Image 3">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/9.jpg" class="img-fluid" alt="Happy Customer Image 4">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/3.jpg" class="img-fluid" alt="Happy Customer Image 5">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/8.jpg" class="img-fluid" alt="Happy Customer Image 6">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/1.webp" class="img-fluid" alt="Happy Customer Image 3">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/3.jpg" class="img-fluid" alt="Happy Customer Image 4">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/7.jpg" class="img-fluid" alt="Happy Customer Image 5">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 mb-2">
+                        <img src="happy customer/8.jpg" class="img-fluid" alt="Happy Customer Image 6">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3: 2 Images -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div>
+                    <img src="happy customer/7.jpg" class="img-fluid" alt="Happy Customer Image 8">
+                </div>
+                <div class="my-2">
+                    <img src="happy customer/1.webp" class="img-fluid" alt="Happy Customer Image 7">
+                </div>
+        
+            </div>
+
+        </div>
+    </div>
+
+    
+        <!-- Contact Page -->
+    <div class="container" style="background-color: #FBFBFB; padding: 1rem;">
+        <div class="text-center mt-5">
+            <h2 class="text-danger fw-bold">Contact Now</h2>
+            <p>If any problem you can send message to us </p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="contact 2.avif" class="img-fluid rounded" alt="Contact Image">
+            </div>
+            <div class="col-lg-6">
+                <form action="" class="mt-4">
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Admin">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="4" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a class="text-white text-decoration-none mx-2" href="#">Home</a>
+                    <a class="text-white text-decoration-none mx-2" href="#">About</a>
+                    <a class="text-white text-decoration-none mx-2" href="#">Services</a>
+                    <a class="text-white text-decoration-none mx-2" href="#">Destinations</a>
+                    <a class="text-white text-decoration-none mx-2" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="mb-0">&copy; 2024 Your Company Name. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- Bootstrap JavaScript bundle (includes Popper) -->
+     <script src="js/gallery.js"></script>
+     <script src="js/accodionImage.js"></script>
+     <script src="js/autoIncreasing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

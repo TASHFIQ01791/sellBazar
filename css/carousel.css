@@ -1,0 +1,30 @@
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    object-fit: cover; /* This maintains the aspect ratio and fills the area */
+}
+
+.carousel-indicators img{
+    width: 100px;
+    object-fit: cover;
+    display: block;
+}
+.carousel-indicators button{
+    width: max-content !important;
+}
+.carousel-indicators {
+   position: unset;
+}
+.carousel-indicators button.active img{
+   border: 3px solid salmon;
+}
+
+.carousel-item h5{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.carousel-item p{
+    font-size: 1rem;
+    font-weight: 700;
+}
